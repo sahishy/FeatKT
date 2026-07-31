@@ -41,16 +41,24 @@ Setup instructions are in [INSTALL.md](INSTALL.md).
 
 FeatKT achieved a mean AUC of **0.747** across the five NAMS prefix ratios on the sampled EdNet-KT1 data.
 
-| Model | Mean AUC |
-| --- | ---: |
-| DKT | 0.594 |
-| sparseKT | 0.646 |
-| simpleKT | 0.666 |
-| AKT | 0.666 |
-| Feature-matched attentive transformer | 0.726 |
-| **FeatKT** | **0.747** |
-
-![AUC comparison across NAMS prefix ratios](figures/fig5_auc_lines.png)
+<table width="100%">
+  <tr>
+    <td valign="center" width="42%">
+      <table width="100%">
+        <tr><th>Model</th><th width="100">Mean AUC</th></tr>
+        <tr><td>DKT</td><td align="right" width="100">0.594</td></tr>
+        <tr><td>sparseKT</td><td align="right" width="100">0.646</td></tr>
+        <tr><td>simpleKT</td><td align="right" width="100">0.666</td></tr>
+        <tr><td>AKT</td><td align="right" width="100">0.666</td></tr>
+        <tr><td>AT + Features</td><td align="right" width="100">0.726</td></tr>
+        <tr><td><b>FeatKT</b></td><td align="right" width="100"><b>0.747</b></td></tr>
+      </table>
+    </td>
+    <td valign="center" width="58%">
+      <img src="figures/fig5_auc_lines.png" alt="AUC comparison across NAMS prefix ratios" width="100%" />
+    </td>
+  </tr>
+</table>
 
 The notebook includes validation checks with five random seeds, a shuffled-label test, a train/test user-overlap check, and bootstrap comparisons with the feature-matched transformer.
 
