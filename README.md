@@ -35,8 +35,6 @@ Setup instructions are in [INSTALL.md](INSTALL.md).
 - **Evaluation:** pyKT's non-accumulative multi-step (NAMS) protocol at prefix ratios 0.2, 0.4, 0.6, 0.8, and 0.9. Performance is measured with AUC
 - **Model:** LightGBM with five features: concept identifier, question difficulty, log elapsed time, log lag time, and frozen prefix accuracy
 
-![FeatKT model architecture](figures/fig2_model_architecture.png)
-
 ## Results
 
 FeatKT achieved a mean AUC of **0.747** across the five NAMS prefix ratios on the sampled EdNet-KT1 data.
