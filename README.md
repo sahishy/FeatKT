@@ -25,7 +25,7 @@
 
 FeatKT is a knowledge tracing model that predicts whether a student will answer a future question correctly. It uses LightGBM and five features derived from the student's observed learning history.
 
-Setup instructions are in [INSTALL.md](INSTALL.md).
+Setup instructions are in [SETUP.md](SETUP.md).
 
 ## Overview
 
@@ -59,8 +59,6 @@ FeatKT achieved a mean AUC of **0.747** across the five NAMS prefix ratios on th
 </table>
 
 The notebook includes validation checks with five random seeds, a shuffled-label test, a train/test user-overlap check, and bootstrap comparisons with the feature-matched transformer.
-
-![FeatKT feature importance](figures/fig4_feature_importance.png)
 
 ## License
 

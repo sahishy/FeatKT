@@ -42,7 +42,23 @@ DATA_DIR = "/content/drive/My Drive/riiid-test-answer-prediction"
 
 Change this path if you used a different folder name or location.
 
-## 4. Run the notebook
+## 4. Configure the experiment
+
+The following values are in the notebook configuration cell:
+
+```python
+N_USERS = 5000
+SEED = 42
+RATIOS = [0.2, 0.4, 0.6, 0.8, 0.9]
+CV_FOLDS = [0, 1, 2, 3, 4]
+```
+
+- `N_USERS` is the number of students sampled from the full dataset. The default experiment uses 5,000 students.
+- `SEED` sets the random seed used when selecting students. Keeping it at `42` reproduces the same sample.
+- `RATIOS` lists the observed prefix ratios used for evaluation. For example, `0.4` means the model sees the first 40% of a student's history and predicts the remaining 60%.
+- `CV_FOLDS` lists the training folds used for cross-validation of the neural baseline models.
+
+## 5. Run the notebook
 
 Run the cells from the top. The notebook installs the required packages, prepares the data, trains the models, and saves cached files in the dataset folder.
 
